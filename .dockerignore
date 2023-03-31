@@ -9,4 +9,6 @@ Dockerfile*
 docker-compose.yml
 public
 .svelte-kit
-build
+build/
+public/
+.firebase/
