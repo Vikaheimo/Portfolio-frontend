@@ -54,12 +54,13 @@
     // Custom body
     :global(body), :global(html) {
         height: 100%;
-        overflow: scroll;
+        overflow: auto;
     }
 
     :global(body) {
         display: flex;
         flex-direction:column;
+        min-height: 100%
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -70,6 +71,6 @@
 	}
     main {
         color: #EEEEEE;
-        padding: 2rem 0 1rem 0;
+        min-height: 90%
     }
 </style>
