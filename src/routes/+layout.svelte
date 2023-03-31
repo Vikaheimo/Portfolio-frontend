@@ -71,6 +71,6 @@
 	}
     main {
         color: #EEEEEE;
-        min-height: 90%
+        height: 100vw;
     }
 </style>
