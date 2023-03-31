@@ -52,15 +52,17 @@
     }
 
     // Custom body
+    :global(body), :global(html) {
+        height: 100%;
+        overflow: scroll;
+    }
+
     :global(body) {
-        min-height: 100vh;
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
 
 	.navlinks {
 		display: flex;
@@ -68,6 +70,6 @@
 	}
     main {
         color: #EEEEEE;
-        min-height: 85vh;
+        padding: 2rem 0 1rem 0;
     }
 </style>
