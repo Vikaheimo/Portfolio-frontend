@@ -5,14 +5,15 @@
 
 <style lang="scss">
     footer {
-
-        position: absolute;
-        bottom: 0;
+        position: sticky;
+        top: 100%;
+        height: 60px;
+        clear: both;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #00ADB5;
-        padding: 0.5rem 0;
+        padding: 1rem;
     }
 </style>

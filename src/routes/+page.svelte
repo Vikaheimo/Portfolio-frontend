@@ -27,6 +27,7 @@
     }
     .box {
         display: block;
+        margin: 2rem;
     }
     .buttons {
         margin-top: 50px;
