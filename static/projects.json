@@ -1,11 +1,20 @@
 [
     {
-        "image": "Soon TM",
+        "image": "images/empty.png",
         "name": "Budget-Tracker",
         "description": "A buget-tracking website.",
         "technologies": ["React.js", "Rust", "Rocket.rs", "MariaDB", "Docker"],
         "platforms": ["Web"],
         "sourceCodeLink": "https://github.com/Vikaheimo/Budget-Tracker",
         "visitLink": ""
+    },
+    {
+        "image": "images/empty.png",
+        "name": "Portfolio Website",
+        "description": "This webiste which you are currently viewing.",
+        "technologies": ["SvelteKit", "Firebase", "Typescript"],
+        "platforms": ["Web"],
+        "sourceCodeLink": "https://github.com/Vikaheimo/Portfolio-frontend",
+        "visitLink": "https://portfolio-6fd0b.firebaseapp.com/"
     }
 ]
