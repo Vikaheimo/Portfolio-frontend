@@ -71,6 +71,7 @@
 	}
     main {
         color: #EEEEEE;
-        height: 100vw;
+        height: 100vh;
+        min-width: none;
     }
 </style>
