@@ -23,7 +23,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        height: auto;
     }
     .box {
         display: block;
