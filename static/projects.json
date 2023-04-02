@@ -9,7 +9,7 @@
         "visitLink": ""
     },
     {
-        "image": "images/empty.png",
+        "image": "images/portfolio.png",
         "name": "Portfolio Website",
         "description": "This webiste which you are currently viewing.",
         "technologies": ["SvelteKit", "Firebase", "Typescript"],

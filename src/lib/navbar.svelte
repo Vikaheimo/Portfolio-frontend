@@ -28,6 +28,7 @@
             <li><a href="/projects">Projects</a></li>
         </ul>
 	</div>
+    <!-- svelte-ignore a11y-invalid-attribute -->
     <a href="#" class="toggle-button active" on:click={navtoggle}>
         <span class="bar"></span>
         <span class="bar"></span>
