@@ -10,11 +10,11 @@
     </p>
     <div class="socials">
         <a href="https://www.linkedin.com/in/vili-ikaheimo/" class="fa fa-linkedin-square linkedin"> </a>
-        <a href="https://www.linkedin.com/in/vili-ikaheimo/" class="fa fa-twitter twitter"> </a>
-        <a href="https://www.linkedin.com/in/vili-ikaheimo/" class="fa fa-github github"> </a>
+        <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter"> </a>
+        <a href="https://github.com/Vikaheimo" class="fa fa-github github"> </a>
         <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email"> </a>
     </div>
-    <img src={"images/empty.png"} alt="loading.." >
+    <img src={"images/avatar.jpg"} alt="loading.." >
 </div>
 
 
@@ -23,6 +23,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 2rem;
     }
 
     h1 {
@@ -73,6 +74,10 @@
     }
 
     .github {
-        color: #333
+        color: white;
+    }
+
+    .email {
+        color: #B94700;
     }
 </style>
