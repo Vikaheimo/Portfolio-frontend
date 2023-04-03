@@ -3,7 +3,7 @@
     import Imageslider from "../../lib/projectShowcase.svelte";
     type sliderData = {image: string, technologies: string[], platforms: string[], 
         name: string, description: string, sourceCodeLink: string, visitLink: string};
-    let jsonData: sliderData[] = [];
+    let jsonData: sliderData[];
 
     onMount(async () => {
         const currentURL = window.location.origin;
@@ -18,9 +18,7 @@
 <div class="center">
     <div class="flex">
         <div class="text">Here you can find some of projects that I've worked on.</div>
-        {#each jsonData as project}
-            <Imageslider data={project}/>
-        {/each}
+        <Imageslider jsonData={jsonData}/>
     </div>
 </div>
 
@@ -42,7 +40,7 @@
         margin: 2rem;
         display: flex;
         flex-direction: column;
-        row-gap: 5rem;
+        row-gap: 10rem;
         align-items: center;
         justify-content: center;
     }

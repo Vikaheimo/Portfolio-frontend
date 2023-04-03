@@ -1,3 +1,7 @@
+<svelte:head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</svelte:head>
+
 <script lang="ts">
     import Navbar from "../lib/navbar.svelte";
     import Footer from "../lib/footer.svelte";
@@ -49,18 +53,12 @@
     // Custom backround color
     :global(body) {
         background-color: #393E46;
+        max-height: fit
     }
 
-    // Custom body
-    :global(body), :global(html) {
-        height: 100%;
+    :global(html) {
         overflow: auto;
-    }
-
-    :global(body) {
-        display: flex;
-        flex-direction:column;
-        min-height: 100%
+        height: 100%;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -71,7 +69,9 @@
 	}
     main {
         color: #EEEEEE;
-        height: 100vh;
-        min-width: none;
+        min-height: calc(100vh - 60px - 56px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
