@@ -2,7 +2,7 @@
     {
         "image": "images/empty.png",
         "name": "Budget-Tracker",
-        "description": "A buget-tracking website.",
+        "description": "A budget-tracking website.",
         "technologies": ["React.js", "Rust", "Rocket.rs", "MariaDB", "Docker"],
         "platforms": ["Web"],
         "sourceCodeLink": "https://github.com/Vikaheimo/Budget-Tracker",
