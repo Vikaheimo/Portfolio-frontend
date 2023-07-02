@@ -33,8 +33,10 @@
     .showcase {
         display: grid;
         grid-template-columns: 500px 600px;
+        align-items: center;
         row-gap: 200px;
         column-gap: 100px;
+        
     }
 
     .showcase img {
