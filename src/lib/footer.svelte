@@ -5,10 +5,9 @@
 
 <style lang="scss">
     footer {
-        position: sticky;
-        top: 100%;
-        height: 60px;
-        clear: both;
+        position: absolute;
+        bottom: 0;
+        height: 2.5rem;
         width: 100%;
         display: flex;
         align-items: center;

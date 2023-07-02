@@ -6,14 +6,16 @@
     import Navbar from "../lib/navbar.svelte";
     import Footer from "../lib/footer.svelte";
 </script>
+<div class="page-container">
+    <div class="content-wrap">
+        <Navbar />
 
-<Navbar />
-
-<main>
-	<slot />
-</main>
-
-<Footer />
+        <main>
+            <slot />
+        </main>
+    </div>
+    <Footer />
+</div>
 
 <style lang="scss">
     /* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
@@ -53,25 +55,25 @@
     // Custom backround color
     :global(body) {
         background-color: #393E46;
-        max-height: fit
-    }
-
-    :global(html) {
-        overflow: auto;
-        height: 100%;
+        max-height: fit;
+        color: #EEEEEE;
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    html {
+        height: 100%;
+    }
+    .page-container {
+        position: relative;
+        min-height: 100%;
+    }
 
-	.navlinks {
-		display: flex;
-		justify-content: space-around;
-	}
+    .content-wrap {
+        padding-bottom: 2.5rem;
+        min-height: 100vh;
+    }
+    
     main {
-        color: #EEEEEE;
-        min-height: calc(100vh - 60px - 56px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        min-height: calc(100vh - 2.5rem - 70px);
     }
 </style>
