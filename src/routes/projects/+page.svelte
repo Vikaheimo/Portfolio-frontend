@@ -13,8 +13,7 @@
     let jsonData: sliderData[];
 
     onMount(async () => {
-        const currentURL = window.location.origin;
-        fetch(currentURL + '/projects.json')
+        fetch('/projects.json')
             .then((response) => response.json())
             .then((data) => {
                 jsonData = data;
@@ -22,33 +21,25 @@
     });
 </script>
 
-<div class="center">
-    <div class="flex">
-        <div class="text">Here you can find some of projects that I've worked on.</div>
-        <Imageslider {jsonData} />
-    </div>
+<div class="flex">
+    <Imageslider {jsonData} />
 </div>
 
 <style lang="scss">
-    .center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        margin-bottom: 50px;
-    }
-
-    .text {
-        font-size: 3rem;
-        text-align: center;
-    }
-
     .flex {
-        margin: 2rem;
+        margin: 5rem;
         display: flex;
         flex-direction: column;
         row-gap: 10rem;
         align-items: center;
         justify-content: center;
+    }
+
+    @media (max-width: 1000px) {
+        .flex {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
     }
 </style>

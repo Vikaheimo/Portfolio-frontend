@@ -86,7 +86,7 @@
 
     h1 {
         font-size: 3rem;
-        color: #00adb5;
+        color: #eeeeee;
     }
 
     @media (max-width: 1300px) {

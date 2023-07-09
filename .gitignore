@@ -6,9 +6,11 @@ public/
 /package
 .env
 .firebase/
+
 .env.*
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .firebase/
 public/
+firebase-debug.log

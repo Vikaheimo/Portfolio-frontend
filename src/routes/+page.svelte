@@ -6,7 +6,7 @@
     };
 </script>
 
-<div class="center">
+<div class="flex">
     <div class="box">
         <h1>
             Hello there, I'm <a href="https://www.linkedin.com/in/vili-ikaheimo/">Vili Ikäheimo</a>.
@@ -20,14 +20,13 @@
 </div>
 
 <style lang="scss">
-    .center {
+    .flex {
         display: flex;
-        align-items: center;
+        align-self: center;
         justify-content: center;
-        min-height: calc(100vh - 2.5rem - 70px);
     }
+
     .box {
-        display: block;
         margin: 2rem;
     }
     .buttons {
@@ -47,5 +46,12 @@
     a {
         text-decoration: none;
         color: #00adb5;
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
     }
 </style>

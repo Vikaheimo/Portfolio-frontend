@@ -1,135 +1,119 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    let navlinks: Element;
-    let togglebuton: Element;
+    import { page } from '$app/stores';
+    import { onDestroy } from 'svelte';
 
-    onMount(() => {
-        navlinks = document.getElementsByClassName('navlinks')[0];
-        togglebuton = document.getElementsByClassName('toggle-button')[0];
-
-        navlinks.classList.toggle('active');
-        togglebuton.classList.toggle('active');
+    let current_page: string;
+    let unSub = page.subscribe((data) => {
+        current_page = data.url.pathname;
     });
-
-    const navtoggle = () => {
-        console.log(navlinks);
-        navlinks.classList.toggle('active');
-        togglebuton.classList.toggle('active');
-        console.log(togglebuton);
-    };
 </script>
 
-<nav>
-    <div class="title">Vikaheimo</div>
-    <div class="navlinks active">
+<header>
+    <nav>
+        <svg viewBox="0 0 2 3">
+            <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
+        </svg>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/blog">Projects</a></li>
+            <li>
+                <a href="/" class={current_page === '/' ? 'current' : undefined}>home</a>
+            </li>
+
+            <li>
+                <a href="/about" class={current_page === '/about' ? 'current' : undefined}>about</a>
+            </li>
+
+            <li>
+                <a href="/projects" class={current_page === '/projects' ? 'current' : undefined}
+                    >projects</a
+                >
+            </li>
         </ul>
-    </div>
-    <!-- svelte-ignore a11y-invalid-attribute -->
-    <a href="#" class="toggle-button active" on:click={navtoggle}>
-        <span class="bar" />
-        <span class="bar" />
-        <span class="bar" />
-    </a>
-</nav>
+        <svg viewBox="0 0 2 3" aria-hidden="true">
+            <path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
+        </svg>
+    </nav>
+</header>
 
 <style lang="scss">
-    nav {
+    header {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        position: fixed;
         background-color: #222831;
-        color: white;
+        height: 0.5rem;
     }
 
-    .title {
-        margin: 0.5rem;
-        font-size: 1.5rem;
-        padding-left: 50px;
+    nav {
+        position: fixed;
+        top: -2rem;
+        height: 3rem;
+        display: flex;
+        transition: top 0.5s linear;
     }
 
-    .navlinks {
-        margin-right: 100px;
+    nav:hover {
+        top: 0;
+    }
+
+    svg {
+        width: 2em;
+        height: 3em;
+        display: block;
+    }
+
+    path {
+        fill: #222831;
     }
 
     ul {
-        margin: 0;
-        padding: 0;
+        background-color: #222831;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        column-gap: 2rem;
+        padding: 0;
     }
 
     li {
-        list-style-type: none;
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 1rem;
-            display: block;
-        }
-
-        a:hover {
-            background-color: #555;
-        }
+        height: 100%;
+        display: grid;
+        align-items: center;
     }
 
-    .toggle-button {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 20px;
+    .current {
+        text-decoration: underline;
+        text-decoration-color: #eeeeee;
+
+        -webkit-text-decoration-color: #eeeeee;
+        -moz-text-decoration-color: #eeeeee;
     }
 
-    .toggle-button .bar {
-        height: 3px;
-        width: 100%;
-        background-color: white;
-        border-radius: 10px;
+    .current:hover {
+        text-decoration-color: #00adb5;
+
+        -webkit-text-decoration-color: red;
+        -moz-text-decoration-color: red;
     }
-    @media (max-width: 500px) {
+
+    a {
+        color: #eeeeee;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    a:hover {
+        color: #00adb5;
+    }
+
+    @media (max-width: 1000px) {
         nav {
-            flex-direction: column;
-            align-items: flex-start;
-
-            ul {
-                width: 100%;
-                flex-direction: column;
-            }
-        }
-
-        .navlinks {
-            display: none;
-            width: 100%;
-        }
-
-        .toggle-button {
-            display: flex;
-        }
-
-        li {
-            text-align: center;
-        }
-
-        .navlinks a {
-            padding: 0.5rem 1rem;
-        }
-
-        .navlinks.active {
-            display: flex;
-        }
-
-        .toggle-button.active {
-            position: relative;
-            left: calc(50% - 20px);
             top: 0;
-            margin-bottom: 5px;
         }
     }
 </style>
