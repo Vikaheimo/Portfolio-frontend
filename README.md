@@ -4,8 +4,8 @@ This is the current code for my portfolio website! Branch firebase contains curr
 
 ## Technologies used
 
-| Name | Version |
-|------|---------|
-| SvetleKit | 1.5.0 |
-| Sass | 1.60 |
-| Firebase | - |
+| Name      | Version |
+| --------- | ------- |
+| SvetleKit | 1.5.0   |
+| Sass      | 1.60    |
+| Firebase  | -       |

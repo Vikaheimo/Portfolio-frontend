@@ -1,19 +1,20 @@
 <script lang="ts">
-    import Button from "../lib/button.svelte";
+    import Button from '../lib/button.svelte';
 
     const setPage = (page: string) => {
-        document.location.href = page
-    }
+        document.location.href = page;
+    };
 </script>
 
 <div class="center">
     <div class="box">
-        <h1>Hello there, I'm <a href="https://www.linkedin.com/in/vili-ikaheimo/">Vili Ikäheimo</a>.
+        <h1>
+            Hello there, I'm <a href="https://www.linkedin.com/in/vili-ikaheimo/">Vili Ikäheimo</a>.
         </h1>
         <h1>I am a software developer!</h1>
         <div class="buttons">
-            <Button text={"About me"} onClick={() => setPage("/about")}/>
-            <Button text={"Projects"} onClick={() => setPage("/projects")}/>
+            <Button text={'About me'} onClick={() => setPage('/about')} />
+            <Button text={'Projects'} onClick={() => setPage('/projects')} />
         </div>
     </div>
 </div>
@@ -45,6 +46,6 @@
 
     a {
         text-decoration: none;
-        color: #00ADB5;
+        color: #00adb5;
     }
 </style>

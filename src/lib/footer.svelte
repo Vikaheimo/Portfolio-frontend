@@ -1,7 +1,6 @@
 <footer>
-	<p>	&#169; Copyright 2023 Vili Ikäheimo</p>
+    <p>&#169; Copyright 2023 Vili Ikäheimo</p>
 </footer>
-
 
 <style lang="scss">
     footer {
@@ -12,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #00ADB5;
+        background-color: #00adb5;
         padding: 1rem;
     }
 </style>

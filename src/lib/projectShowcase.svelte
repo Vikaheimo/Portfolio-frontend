@@ -1,7 +1,14 @@
 <script lang="ts">
-    import Button from "./button.svelte";
-    type sliderData = {image: string, technologies: string[], platforms: string[], 
-        name: string, description: string, sourceCodeLink: string, visitLink: string};
+    import Button from './button.svelte';
+    type sliderData = {
+        image: string;
+        technologies: string[];
+        platforms: string[];
+        name: string;
+        description: string;
+        sourceCodeLink: string;
+        visitLink: string;
+    };
     export let jsonData: sliderData[] = [];
 </script>
 
@@ -10,18 +17,28 @@
         <div class="text">
             <h1>{data.name}</h1>
             <p class="first">{data.description}</p>
-            <p>Technologies: {data.technologies.join(", ")}</p>
-            <p>Platforms: {data.platforms.join(", ")}</p>
+            <p>Technologies: {data.technologies.join(', ')}</p>
+            <p>Platforms: {data.platforms.join(', ')}</p>
             <div class="buttons">
                 {#if data.visitLink}
-                    <Button onClick={()=> {window.location.href = data.visitLink}} text="View"/>
+                    <Button
+                        onClick={() => {
+                            window.location.href = data.visitLink;
+                        }}
+                        text="View"
+                    />
                 {/if}
                 {#if data.sourceCodeLink}
-                    <Button onClick={()=> {window.location.href = data.sourceCodeLink}} text="Source Code"/>
+                    <Button
+                        onClick={() => {
+                            window.location.href = data.sourceCodeLink;
+                        }}
+                        text="Source Code"
+                    />
                 {/if}
             </div>
         </div>
-        <img src={data.image} alt="loading.." >
+        <img src={data.image} alt="loading.." />
     {/each}
 </div>
 
@@ -36,7 +53,6 @@
         align-items: center;
         row-gap: 200px;
         column-gap: 100px;
-        
     }
 
     .showcase img {
@@ -57,8 +73,8 @@
 
     img {
         display: block;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         width: auto;
         height: auto;
         border: 1px solid black;
@@ -70,7 +86,7 @@
 
     h1 {
         font-size: 3rem;
-        color: #00ADB5;
+        color: #00adb5;
     }
 
     @media (max-width: 1300px) {

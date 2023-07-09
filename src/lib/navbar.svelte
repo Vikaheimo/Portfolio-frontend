@@ -4,35 +4,36 @@
     let togglebuton: Element;
 
     onMount(() => {
-        navlinks = document.getElementsByClassName("navlinks")[0];
-        togglebuton = document.getElementsByClassName("toggle-button")[0];
+        navlinks = document.getElementsByClassName('navlinks')[0];
+        togglebuton = document.getElementsByClassName('toggle-button')[0];
 
-        navlinks.classList.toggle("active");
-        togglebuton.classList.toggle("active");
-    })
+        navlinks.classList.toggle('active');
+        togglebuton.classList.toggle('active');
+    });
 
     const navtoggle = () => {
-        console.log(navlinks)
-        navlinks.classList.toggle("active");
-        togglebuton.classList.toggle("active");
-        console.log(togglebuton)
-    }
+        console.log(navlinks);
+        navlinks.classList.toggle('active');
+        togglebuton.classList.toggle('active');
+        console.log(togglebuton);
+    };
 </script>
 
 <nav>
     <div class="title">Vikaheimo</div>
-	<div class="navlinks active">
-		<ul>
+    <div class="navlinks active">
+        <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/projects">Projects</a></li>
+            <li><a href="/blog">Projects</a></li>
         </ul>
-	</div>
+    </div>
     <!-- svelte-ignore a11y-invalid-attribute -->
     <a href="#" class="toggle-button active" on:click={navtoggle}>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="bar" />
+        <span class="bar" />
+        <span class="bar" />
     </a>
 </nav>
 
@@ -46,7 +47,7 @@
     }
 
     .title {
-        margin: .5rem;
+        margin: 0.5rem;
         font-size: 1.5rem;
         padding-left: 50px;
     }
@@ -74,7 +75,6 @@
             background-color: #555;
         }
     }
-
 
     .toggle-button {
         position: absolute;
@@ -118,7 +118,7 @@
         }
 
         .navlinks a {
-            padding: .5rem 1rem;
+            padding: 0.5rem 1rem;
         }
 
         .navlinks.active {

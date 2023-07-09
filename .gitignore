@@ -1,9 +1,11 @@
 .DS_Store
 node_modules
 /build
+public/
 /.svelte-kit
 /package
 .env
+.firebase/
 .env.*
 !.env.example
 vite.config.js.timestamp-*

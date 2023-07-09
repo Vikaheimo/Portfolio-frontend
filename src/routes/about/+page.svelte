@@ -4,19 +4,21 @@
         <p class="infotext">Software Developer</p>
     </div>
     <p class="longtext">
-        Starting Software developer passionate about developing in Rust.
-        Knowledgeable in front-end, back-end, debugging and security.
-        Experience in many technologies, including React, Node, Express, MongoDB and gRPC.
+        Starting Software developer passionate about developing in Rust. Knowledgeable in front-end,
+        back-end, debugging and security. Experience in many technologies, including React, Node,
+        Express, MongoDB and gRPC.
     </p>
     <div class="socials">
-        <a href="https://www.linkedin.com/in/vili-ikaheimo/" class="fa fa-linkedin-square linkedin"> </a>
-        <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter"> </a>
-        <a href="https://github.com/Vikaheimo" class="fa fa-github github"> </a>
-        <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email"> </a>
+        <a
+            href="https://www.linkedin.com/in/vili-ikaheimo/"
+            class="fa fa-linkedin-square linkedin"
+        />
+        <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter" />
+        <a href="https://github.com/Vikaheimo" class="fa fa-github github" />
+        <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email" />
     </div>
-    <img src={"images/avatar.jpg"} alt="loading.." >
+    <img src={'images/avatar.jpg'} alt="loading.." />
 </div>
-
 
 <style lang="scss">
     .outer {
@@ -27,7 +29,7 @@
     }
 
     h1 {
-        color: #00ADB5;
+        color: #00adb5;
         font-size: 4rem;
         text-align: center;
     }
@@ -62,15 +64,15 @@
     a {
         text-decoration: none;
         font-size: 36px;
-        color: #00ADB5;
+        color: #00adb5;
     }
 
     .linkedin {
-        color: #0077B5;
+        color: #0077b5;
     }
 
     .twitter {
-        color: #1DA1F2;
+        color: #1da1f2;
     }
 
     .github {
@@ -78,6 +80,6 @@
     }
 
     .email {
-        color: #B94700;
+        color: #b94700;
     }
 </style>
