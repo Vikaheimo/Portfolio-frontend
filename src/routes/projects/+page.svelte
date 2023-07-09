@@ -34,4 +34,12 @@
         align-items: center;
         justify-content: center;
     }
+
+    @media (max-width: 1000px) {
+        .flex {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
+    }
 </style>

@@ -1,37 +1,29 @@
-<div class="center">
-    <div class="outer">
-        <div class="main">
-            <h1>Vili Ikäheimo</h1>
-            <p class="longtext">
-                Starting Software developer passionate about developing in Rust. Knowledgeable in
-                front-end, back-end, debugging and security. Experience in many technologies,
-                including React, Node, Express and MongoDB.
-            </p>
-            <div class="socials">
-                <!-- svelte-ignore a11y-missing-content -->
-                <a
-                    href="https://www.linkedin.com/in/vili-ikaheimo/"
-                    class="fa fa-linkedin-square linkedin"
-                />
-                <!-- svelte-ignore a11y-missing-content -->
-                <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter" />
-                <!-- svelte-ignore a11y-missing-content -->
-                <a href="https://github.com/Vikaheimo" class="fa fa-github github" />
-                <!-- svelte-ignore a11y-missing-content -->
-                <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email" />
-            </div>
+<div class="outer">
+    <div class="main">
+        <h1>Vili Ikäheimo</h1>
+        <p class="longtext">
+            Starting Software developer passionate about developing in Rust. Knowledgeable in
+            front-end, back-end, debugging and security. Experience in many technologies, including
+            React, Node, Express and MongoDB.
+        </p>
+        <div class="socials">
+            <!-- svelte-ignore a11y-missing-content -->
+            <a
+                href="https://www.linkedin.com/in/vili-ikaheimo/"
+                class="fa fa-linkedin-square linkedin"
+            />
+            <!-- svelte-ignore a11y-missing-content -->
+            <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter" />
+            <!-- svelte-ignore a11y-missing-content -->
+            <a href="https://github.com/Vikaheimo" class="fa fa-github github" />
+            <!-- svelte-ignore a11y-missing-content -->
+            <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email" />
         </div>
-        <img src={'images/avatar.jpg'} alt="loading.." />
     </div>
+    <img src={'images/avatar.jpg'} alt="loading.." />
 </div>
 
 <style lang="scss">
-    .center {
-        min-height: 100vh;
-        display: grid;
-        align-items: center;
-    }
-
     .outer {
         display: flex;
         align-items: center;
@@ -40,6 +32,7 @@
         flex-wrap: wrap;
         margin-left: 1rem;
         margin-right: 1rem;
+        row-gap: 3rem;
     }
 
     .main {
@@ -94,5 +87,12 @@
 
     .email {
         color: #b94700;
+    }
+
+    @media (max-width: 500px) {
+        .outer {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
     }
 </style>

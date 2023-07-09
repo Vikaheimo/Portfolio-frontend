@@ -110,4 +110,10 @@
     a:hover {
         color: #00adb5;
     }
+
+    @media (max-width: 1000px) {
+        nav {
+            top: 0;
+        }
+    }
 </style>
