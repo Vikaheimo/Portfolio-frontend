@@ -1,6 +1,5 @@
 <script lang="ts">
     import Navbar from '../lib/navbar.svelte';
-    import Footer from '../lib/footer.svelte';
 </script>
 
 <svelte:head>
@@ -9,15 +8,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 </svelte:head>
-<div class="page-container">
-    <div class="content-wrap">
-        <Navbar />
-        <main>
-            <slot />
-        </main>
-    </div>
-    <Footer />
-</div>
+
+<Navbar />
+<main>
+    <slot />
+</main>
 
 <style lang="scss">
     /* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
@@ -41,7 +36,6 @@
 
     :global(html),
     :global(body) {
-        height: 100%;
         line-height: 1.5;
         -webkit-font-smoothing: antialiased;
         font-family: 'Roboto', sans-serif;
@@ -75,25 +69,30 @@
     // Custom backround color
     :global(body) {
         background-color: #393e46;
-        max-height: fit;
+        background-image: linear-gradient(
+            to right bottom,
+            #00adb5,
+            #2197a8,
+            #338196,
+            #3c6b80,
+            #3f5768,
+            #3c4c5b,
+            #38424e,
+            #333841,
+            #2f343d,
+            #2a3039,
+            #262c35,
+            #222831
+        );
         color: #eeeeee;
-    }
-
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    html {
-        height: 100%;
-    }
-    .page-container {
-        position: relative;
-        min-height: 100%;
-    }
-
-    .content-wrap {
-        padding-bottom: 2.5rem;
         min-height: 100vh;
     }
 
     main {
-        min-height: calc(100vh - 2.5rem - 70px);
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 </style>

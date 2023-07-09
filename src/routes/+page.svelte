@@ -24,7 +24,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: calc(100vh - 2.5rem - 70px);
+        min-height: 100vh;
     }
     .box {
         display: block;
