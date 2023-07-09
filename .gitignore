@@ -13,4 +13,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .firebase/
 public/
-test/
+firebase-debug.log
