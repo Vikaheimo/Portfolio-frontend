@@ -1,29 +1,29 @@
 [
-  {
-    "image": "images/portfolio.png",
-    "name": "Portfolio Website",
-    "description": "This webiste which you are currently viewing.",
-    "technologies": ["SvelteKit", "Firebase", "Typescript"],
-    "platforms": ["Web"],
-    "sourceCodeLink": "https://github.com/Vikaheimo/Portfolio-frontend",
-    "visitLink": "https://portfolio-6fd0b.firebaseapp.com/"
-  },
-  {
-    "image": "images/mielikki.png",
-    "name": "Mielikki",
-    "description": "A simple file manager that aims to be faster than File Explorer.",
-    "technologies": ["SvelteKit", "Rust", "Tauri"],
-    "platforms": ["Desktop"],
-    "sourceCodeLink": "https://github.com/Vikaheimo/Mielikki",
-    "visitLink": ""
-  },
-  {
-    "image": "images/empty.png",
-    "name": "Budget-Tracker",
-    "description": "A budget-tracking website.",
-    "technologies": ["React.js", "Rust", "Rocket.rs", "MariaDB", "Docker"],
-    "platforms": ["Web"],
-    "sourceCodeLink": "https://github.com/Vikaheimo/Budget-Tracker",
-    "visitLink": ""
-  }
+    {
+        "image": "images/portfolio.png",
+        "name": "Portfolio Website",
+        "description": "This webiste which you are currently viewing.",
+        "technologies": ["SvelteKit", "Firebase", "Typescript"],
+        "platforms": ["Web"],
+        "sourceCodeLink": "https://github.com/Vikaheimo/Portfolio-frontend",
+        "visitLink": "https://portfolio-6fd0b.firebaseapp.com/"
+    },
+    {
+        "image": "images/mielikki.png",
+        "name": "Mielikki",
+        "description": "A simple file manager that aims to be faster than File Explorer.",
+        "technologies": ["SvelteKit", "Rust", "Tauri"],
+        "platforms": ["Desktop"],
+        "sourceCodeLink": "https://github.com/Vikaheimo/Mielikki",
+        "visitLink": ""
+    },
+    {
+        "image": "images/empty.png",
+        "name": "Budget-Tracker",
+        "description": "A budget-tracking website.",
+        "technologies": ["React.js", "Rust", "Rocket.rs", "MariaDB", "Docker"],
+        "platforms": ["Web"],
+        "sourceCodeLink": "https://github.com/Vikaheimo/Budget-Tracker",
+        "visitLink": ""
+    }
 ]
