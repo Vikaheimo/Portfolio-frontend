@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<style lang="scss">
+<style>
     .flex {
         display: flex;
         align-self: center;

@@ -5,7 +5,7 @@
 
 <button class="button-arounder" on:click={onClick}>{text}</button>
 
-<style lang="scss">
+<style>
     button {
         background: white;
         border: solid 2px black;

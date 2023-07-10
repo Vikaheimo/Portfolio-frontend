@@ -25,7 +25,7 @@
     <Imageslider {jsonData} />
 </div>
 
-<style lang="scss">
+<style>
     .flex {
         margin: 5rem;
         display: flex;

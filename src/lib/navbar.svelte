@@ -34,7 +34,7 @@
     </nav>
 </header>
 
-<style lang="scss">
+<style>
     header {
         display: flex;
         justify-content: center;

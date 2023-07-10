@@ -23,7 +23,7 @@
     <img src={'images/avatar.jpg'} alt="loading.." />
 </div>
 
-<style lang="scss">
+<style>
     .outer {
         display: flex;
         align-items: center;
