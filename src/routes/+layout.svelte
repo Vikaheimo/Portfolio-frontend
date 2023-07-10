@@ -7,6 +7,9 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </svelte:head>
 
 <Navbar />
@@ -14,24 +17,14 @@
     <slot />
 </main>
 
-<style lang="scss">
+<style>
     /* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
 
-    // CSS reset
     :global(*),
     :global(*::before),
     :global(*::after) {
         margin: 0;
         box-sizing: border-box;
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        * {
-            margin: 0;
-        }
     }
 
     :global(html),
@@ -66,7 +59,7 @@
     :global(h6) {
         overflow-wrap: break-word;
     }
-    // Custom backround color
+
     :global(body) {
         background-color: #393e46;
         background-image: linear-gradient(
@@ -93,6 +86,4 @@
         display: grid;
         align-items: center;
     }
-
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 </style>

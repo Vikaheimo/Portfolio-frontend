@@ -42,7 +42,7 @@
     {/each}
 </div>
 
-<style lang="scss">
+<style>
     .text {
         max-width: 570px;
     }
@@ -53,10 +53,7 @@
         align-items: center;
         row-gap: 200px;
         column-gap: 100px;
-    }
-
-    .showcase img {
-        max-height: 380px;
+        transition: 1s;
     }
 
     .buttons {
@@ -73,10 +70,7 @@
 
     img {
         display: block;
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
+        max-height: 380px;
         border: 1px solid black;
     }
 
@@ -89,7 +83,7 @@
         color: #eeeeee;
     }
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1400px) {
         .showcase {
             grid-template-columns: 1fr;
             row-gap: 100px;
