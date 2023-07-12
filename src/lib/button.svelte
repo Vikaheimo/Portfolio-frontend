@@ -7,12 +7,11 @@
 
 <style>
     button {
-        background: white;
         border: solid 2px black;
         padding: 0.375em 1.125em;
         font-size: 1rem;
-        background: #00adb5;
-        color: hsl(190deg, 10%, 95%);
+        background: #00ADB5;
+        color: #212121;
         width: fit-content;
         box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, 0.2);
         border-top-left-radius: 0px;
