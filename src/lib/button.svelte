@@ -1,6 +1,6 @@
 <script lang="ts">
-    export let text: String;
-    export let onClick: any;
+    export let text: string;
+    export let onClick: () => void;
 </script>
 
 <button class="button-arounder" on:click={onClick}>{text}</button>

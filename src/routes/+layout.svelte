@@ -1,6 +1,5 @@
 <script lang="ts">
     import Navbar from '../lib/navbar.svelte';
-    import { page } from '$app/stores';
 </script>
 
 <svelte:head>
