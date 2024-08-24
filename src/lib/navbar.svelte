@@ -1,9 +1,8 @@
 <script lang="ts">
     import { page } from '$app/stores';
-    import { onDestroy } from 'svelte';
 
     let current_page: string;
-    let unSub = page.subscribe((data) => {
+    page.subscribe((data) => {
         current_page = data.url.pathname;
     });
 </script>

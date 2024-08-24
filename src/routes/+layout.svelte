@@ -1,6 +1,5 @@
 <script lang="ts">
     import Navbar from '../lib/navbar.svelte';
-    import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -12,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <title>Vikaheimo.dev</title>
-    <meta name="description" content="Vili Ikäheimo's portfolio website.">
+    <meta name="description" content="Vili Ikäheimo's portfolio website." />
 </svelte:head>
 
 <Navbar />

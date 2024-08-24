@@ -1,6 +1,6 @@
 <script lang="ts">
-    export let text: String;
-    export let onClick: any;
+    export let text: string;
+    export let onClick: () => void;
 </script>
 
 <button class="button-arounder" on:click={onClick}>{text}</button>
@@ -10,7 +10,7 @@
         border: solid 2px black;
         padding: 0.375em 1.125em;
         font-size: 1rem;
-        background: #00ADB5;
+        background: #00adb5;
         color: #212121;
         width: fit-content;
         box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, 0.2);
@@ -23,11 +23,13 @@
         --delay: 0.15s;
         --radius: 16px;
 
-        transition: border-top-left-radius var(--dur) var(--delay) ease-out,
+        transition:
+            border-top-left-radius var(--dur) var(--delay) ease-out,
             border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
             border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
             border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
-            box-shadow calc(var(--dur) * 4) ease-out, transform calc(var(--dur) * 4) ease-out,
+            box-shadow calc(var(--dur) * 4) ease-out,
+            transform calc(var(--dur) * 4) ease-out,
             background calc(var(--dur) * 4) steps(4, jump-end);
     }
 
