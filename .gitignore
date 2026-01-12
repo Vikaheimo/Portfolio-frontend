@@ -17,3 +17,4 @@ firebase-debug.log
 
 .vscode/
 .venv/
+rendercv_output/

@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Vili Ikäheimo
+  headline: Software Developer
+  location: Tampere, Finland
+  email: vili.vikaheim@gmail.com
+  website: https://vikaheimo.dev/
+  social_networks:
+    - network: LinkedIn
+      username: vili-ikaheimo
+    - network: GitHub
+      username: Vikaheimo
+  custom_connections:
+  sections:
+    summary:
+      - Early-career full-stack developer and IT student with a strong interest in systems programming using Rust. Experienced in building secure, cloud-native web applications using React, Node.js, and Express, with hands-on exposure to Docker, Kubernetes, and AWS. Comfortable working in Linux environments and agile teams, contributing to both feature development and production reliability. Motivated to grow as a software engineer by combining solid engineering fundamentals with practical, real-world development experience.
+
+    skills:
+      - label: Languages
+        details: |
+          Finnish (Native),
+          English (Fluent),
+          Swedish (Intermediate),
+          Japanese (Basic)
+      - label: Technologies
+        details: Linux, Docker, Kubernetes, AWS
+      - label: Programming
+        details: Rust, JavaScript, Node.js, React, Python, C++
+      - label: Other
+        details: REST APIs, Cloud-native development, Agile teamwork
+
+    experience:
+      - company: I6o Oy
+        position: Junior Software Designer
+        start_date: 2024-03
+        end_date: present
+        location: Finland
+        highlights:
+          - Delivered full-stack features for customer-facing web applications
+            using React, Node.js, and Express.
+          - Containerized services with Docker and deployed on Kubernetes in AWS.
+          - Maintained environment configurations and improved reliability.
+          - Troubleshot production issues in Linux environments.
+          - Collaborated in an agile team with code reviews and testing.
+
+      - company: Finnish Defence Forces
+        position: Developer / System Administrator (Military Service)
+        start_date: 2022-07
+        end_date: 2023-03
+        location: Finland
+        highlights:
+          - Built full-stack web applications using React, Express.js, Rust, and
+            MongoDB.
+          - Designed and documented RESTful APIs with unit and integration tests.
+          - Containerized applications with Docker for consistent deployment.
+          - Managed Linux servers including monitoring, patching, and
+            troubleshooting.
+
+    education:
+      - institution: University of Tampere
+        area: Information Technology
+        degree: B.Sc. (Tech)
+        start_date: 2021-08
+        end_date: present
+        location: Tampere, Finland
+        highlights:
+          - "Major in Software Engineering"
+          - "Minor in Applied Mathematics"
+          - "GPA: 3.7"
+
+      - institution: Osaka Institute of Technology
+        degree: "-"
+        area: Student Exchange
+        start_date: 2025-08
+        end_date: 2026-03
+        location: Osaka, Japan
+        highlights:
+          - Research exchange in the Communication Systems Laboratory under Prof. Yamauchi.
+          - Designed a video recommendation system project.
+          - Completed Japanese language coursework.
+
+design:
+  theme: engineeringclassic
+
+locale:
+  language: english
+
+settings:
+  current_date: "2026-01-12"
