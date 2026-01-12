@@ -16,3 +16,4 @@ public/
 firebase-debug.log
 
 .vscode/
+.venv/
