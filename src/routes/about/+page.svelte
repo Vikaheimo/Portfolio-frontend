@@ -7,20 +7,16 @@
             React, Node, Express and MongoDB.
         </p>
         <div class="socials">
-            <!-- svelte-ignore a11y-missing-content -->
             <a
                 href="https://www.linkedin.com/in/vili-ikaheimo/"
                 class="fa fa-linkedin-square linkedin"
-            />
-            <!-- svelte-ignore a11y-missing-content -->
-            <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter" />
-            <!-- svelte-ignore a11y-missing-content -->
-            <a href="https://github.com/Vikaheimo" class="fa fa-github github" />
-            <!-- svelte-ignore a11y-missing-content -->
-            <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email" />
+            ></a>
+            <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter"></a>
+            <a href="https://github.com/Vikaheimo" class="fa fa-github github"></a>
+            <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email"></a>
         </div>
     </div>
-    <img src={'images/avatar.jpg'} alt="loading.." />
+    <img src="images/avatar.jpg" alt="loading.." />
 </div>
 
 <style>

@@ -12,5 +12,5 @@ This is the current code for my portfolio website! Dockerize contains some docke
 
 ## Furure
 
--   [ ] Create a blog page
--   [ ] Create new projects and update projects page
+- [ ] Create a blog page
+- [ ] Create new projects and update projects page

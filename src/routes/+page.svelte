@@ -13,8 +13,8 @@
         </h1>
         <h1>I am a software developer!</h1>
         <div class="buttons">
-            <Button text={'About me'} onClick={() => setPage('/about')} />
-            <Button text={'Projects'} onClick={() => setPage('/projects')} />
+            <Button text="About me" onClick={() => setPage('/about')} />
+            <Button text="Projects" onClick={() => setPage('/projects')} />
         </div>
     </div>
 </div>

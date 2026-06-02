@@ -1,6 +1,7 @@
 <script lang="ts">
     import Button from './button.svelte';
     type sliderData = {
+        id: number;
         image: string;
         technologies: string[];
         platforms: string[];
@@ -13,7 +14,7 @@
 </script>
 
 <div class="showcase">
-    {#each jsonData as data}
+    {#each jsonData as data (data.id)}
         <div class="text">
             <h1>{data.name}</h1>
             <p class="first">{data.description}</p>

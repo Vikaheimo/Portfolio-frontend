@@ -1,10 +1,6 @@
 <script lang="ts">
-    import { page } from '$app/stores';
-
-    let current_page: string;
-    page.subscribe((data) => {
-        current_page = data.url.pathname;
-    });
+    import { page } from '$app/state';
+    import { resolve } from '$app/paths';
 </script>
 
 <header>
@@ -14,17 +10,25 @@
         </svg>
         <ul>
             <li>
-                <a href="/" class={current_page === '/' ? 'current' : undefined}>home</a>
-            </li>
-
-            <li>
-                <a href="/about" class={current_page === '/about' ? 'current' : undefined}>about</a>
-            </li>
-
-            <li>
-                <a href="/projects" class={current_page === '/projects' ? 'current' : undefined}
-                    >projects</a
+                <a href={resolve('/')} class={page.url.pathname === '/' ? 'current' : undefined}
+                    >home</a
                 >
+            </li>
+
+            <li>
+                <a
+                    href={resolve('/about')}
+                    class={page.url.pathname === '/about' ? 'current' : undefined}>about</a
+                >
+            </li>
+
+            <li>
+                <a
+                    href={resolve('/projects')}
+                    class={page.url.pathname === '/projects' ? 'current' : undefined}
+                >
+                    projects
+                </a>
             </li>
         </ul>
         <svg viewBox="0 0 2 3" aria-hidden="true">
