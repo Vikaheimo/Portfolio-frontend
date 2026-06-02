@@ -1,45 +1,36 @@
 <script lang="ts">
     import Button from './button.svelte';
-    type sliderData = {
-        id: number;
-        image: string;
-        technologies: string[];
-        platforms: string[];
-        name: string;
-        description: string;
-        sourceCodeLink: string;
-        visitLink: string;
-    };
-    export let jsonData: sliderData[] = [];
+    import type { Project } from './types/Project';
+    export let projects: Project[] = [];
 </script>
 
 <div class="showcase">
-    {#each jsonData as data (data.id)}
+    {#each projects as project (project.id)}
         <div class="text">
-            <h1>{data.name}</h1>
-            <p class="first">{data.description}</p>
-            <p>Technologies: {data.technologies.join(', ')}</p>
-            <p>Platforms: {data.platforms.join(', ')}</p>
+            <h1>{project.name}</h1>
+            <p class="first">{project.description}</p>
+            <p>Technologies: {project.technologies.join(', ')}</p>
+            <p>Platforms: {project.platforms.join(', ')}</p>
             <div class="buttons">
-                {#if data.visitLink}
+                {#if project.visitLink}
                     <Button
                         onClick={() => {
-                            window.location.href = data.visitLink;
+                            window.location.href = project.visitLink;
                         }}
                         text="View"
                     />
                 {/if}
-                {#if data.sourceCodeLink}
+                {#if project.sourceCodeLink}
                     <Button
                         onClick={() => {
-                            window.location.href = data.sourceCodeLink;
+                            window.location.href = project.sourceCodeLink;
                         }}
                         text="Source Code"
                     />
                 {/if}
             </div>
         </div>
-        <img src={data.image} alt="loading.." />
+        <img src={project.image} alt="loading.." />
     {/each}
 </div>
 

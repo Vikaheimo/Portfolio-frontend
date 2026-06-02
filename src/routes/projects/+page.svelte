@@ -1,28 +1,11 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
     import Imageslider from '../../lib/projectShowcase.svelte';
-    type sliderData = {
-        image: string;
-        technologies: string[];
-        platforms: string[];
-        name: string;
-        description: string;
-        sourceCodeLink: string;
-        visitLink: string;
-    };
-    let jsonData: sliderData[];
+    import projects from '../../lib/static/projects.json';
 
-    onMount(async () => {
-        fetch('/projects.json')
-            .then((response) => response.json())
-            .then((data) => {
-                jsonData = data;
-            });
-    });
 </script>
 
 <div class="flex">
-    <Imageslider {jsonData} />
+    <Imageslider {projects} />
 </div>
 
 <style>

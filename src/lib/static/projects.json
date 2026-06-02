@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "image": "images/portfolio.png",
         "name": "Portfolio Website",
         "description": "This webiste which you are currently viewing.",
@@ -9,6 +10,7 @@
         "visitLink": "https://portfolio-6fd0b.firebaseapp.com/"
     },
     {
+        "id": 2,
         "image": "images/mielikki.png",
         "name": "Mielikki",
         "description": "A simple file manager that aims to be faster than File Explorer.",
@@ -18,6 +20,7 @@
         "visitLink": ""
     },
     {
+        "id": 3,
         "image": "images/empty.png",
         "name": "Budget-Tracker",
         "description": "A budget-tracking website.",
