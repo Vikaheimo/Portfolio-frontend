@@ -10,10 +10,32 @@
             <a
                 href="https://www.linkedin.com/in/vili-ikaheimo/"
                 class="fa fa-linkedin-square linkedin"
+                aria-label="LinkedIn profile"
+                target="_blank"
+                rel="noopener noreferrer"
             ></a>
-            <a href="https://twitter.com/VIkaheim" class="fa fa-twitter twitter"></a>
-            <a href="https://github.com/Vikaheimo" class="fa fa-github github"></a>
-            <a href="mailto:vili.vikaheim@gmail.com" class="fa fa-envelope email"></a>
+
+            <a
+                href="https://twitter.com/VIkaheim"
+                class="fa fa-twitter twitter"
+                aria-label="Twitter profile"
+                target="_blank"
+                rel="noopener noreferrer"
+            ></a>
+
+            <a
+                href="https://github.com/Vikaheimo"
+                class="fa fa-github github"
+                aria-label="GitHub profile"
+                target="_blank"
+                rel="noopener noreferrer"
+            ></a>
+
+            <a
+                href="mailto:vili.vikaheim@gmail.com"
+                class="fa fa-envelope email"
+                aria-label="Send email to Vili Ikäheimo"
+            ></a>
         </div>
     </div>
     <img src="images/avatar.jpg" alt="loading.." />
