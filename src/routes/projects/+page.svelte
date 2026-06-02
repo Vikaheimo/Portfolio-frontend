@@ -1,7 +1,6 @@
 <script lang="ts">
     import Imageslider from '../../lib/projectShowcase.svelte';
     import projects from '../../lib/static/projects.json';
-
 </script>
 
 <div class="flex">
