@@ -18,6 +18,7 @@
         "format": "eslint . --fix && prettier --write ."
     },
     "devDependencies": {
+        "@eslint/js": "^10.0.1",
         "@fontsource/fira-mono": "^5.0.0",
         "@neoconfetti/svelte": "^2.0.0",
         "@sveltejs/adapter-auto": "^7.0.1",
